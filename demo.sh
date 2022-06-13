@@ -1,1 +1,1 @@
-sudo sshpass -p Welcome1 ssh -o StrictHostKeyChecking=no oracle@192.168.0.93 'hostname -I';
+sudo sshpass -p Welcome1 ssh -o StrictHostKeyChecking=no oracle@192.168.0.93 'checkout([$class: 'GitSCM', branches: [[name: '*/dev-db']], extensions: [], userRemoteConfigs: [[credentialsId: 'b7e61bd0-eb92-469d-97f4-f89d2cb3ae7d', url: 'https://gitlab.com/cicd138/db-provisioning.git']]])';
